@@ -41,7 +41,7 @@ exports.createProposal = async (req, res) => {
         // Email options
         const mailOptions = {
             from: 'amanupadhyay33822@gmail.com', // Sender address
-            to: "amanu0181@gmail.com", // Recipient address
+            to: "contact@devnbrand.com", // Recipient address
             subject: "New Proposal Submission", // Subject line
             text: `New proposal submitted by ${fullName}\n\nDetails:\nEmail: ${email}\nContact Number: ${contactNumber}\nBudget: ${budget}\nDescription: ${description}`, // Plain text body
         };
