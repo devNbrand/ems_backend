@@ -5,6 +5,8 @@ const taskRoutes = require("./routes/task");
 const availablehoursRoutes = require("./routes/availablehours");
 const breakRoute = require("./routes/break");
 const workedhoursRoutes = require("./routes/workedhours");
+const proposalRoutes = require("./routes/proposal");
+const contactRoutes = require("./routes/contact");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const dotenv = require("dotenv");
@@ -29,6 +31,8 @@ app.use("/api/v1/task", taskRoutes);
 app.use("/api/v1/whours", workedhoursRoutes);
 app.use("/api/v1/ahours", availablehoursRoutes);
 app.use("/api/v1/break", breakRoute);
+app.use("/api/v1/proposal", proposalRoutes);
+app.use("/api/v1/contact", contactRoutes);
 
 
 
